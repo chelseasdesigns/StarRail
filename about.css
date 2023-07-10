@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gold: #CDA716;
+}
+
+body {
+    background-color: #1d357d;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+}
+
+
+/* NavBar */
+.header-container {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #1d357d;
+    /* background-color: lightblue; */
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-logo {
+    transition: 0.3s ease;
+}
+
+.header-logo img {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.header-logo:hover {
+    transform: scale(1.2);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.sitelogo {
+    height: 100%;
+    display: inline-block;
+}
+
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.nav-item:hover {
+    background-color: #d3bf4a;
+    border-radius: 5%;
+}
+
+.nav-item:hover a {
+    color: rgb(4, 2, 48);
+    /* text-decoration: underline; */
+}
+
+.nav-item:active {
+    transform: scale(0.75);
+}
+
+.hero-text-div {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    background-image: url(img\bg\train_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* backdrop-filter: blur(6px); */
+    backdrop-filter: brightness(70%);
+    /* backdrop-filter: opacity(50%); */
+}
+
+.hero-text-div h1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+
+
+
+/* About Page - Grid */
+.AboutGrid {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+    position: relative;
+    background-color: #0c1a40;
+  }
+
+.AboutBox {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    font-size: 30px;
+    margin: 3%;
+    top: 50px;
+  }
+
+
+.AboutPBox {
+    grid-column-start: 7;
+    grid-column-end: 16;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    position: relative;
+    padding: 5%;
+    right: 5%;
+    bottom: 7%;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 3%;
+  }
+
+.AboutIMGBox {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    position: relative;
+    margin: 3%;
+    top: 50px;
+}
+
+.AboutIMGBox img{
+    max-width: 500px;
+    height: auto;
+  }
+
+.GPBox {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    position: relative;
+    font-size: 30px;
+    top: 90px;
+}
+
+.GP_PBox{
+    grid-column-start: 7;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    position: relative;
+    line-height: 50px;
+    font-size: 25px;
+    top: 50px;
+}
+
+.GPIMGBox {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    top: 50px;
+}
+
+.GPIMGBox img{
+    max-width: 1000%;
+    height: auto;
+  }
+
+.SUBox {
+    grid-column-start: 7;
+    grid-column-end: 15;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    position: relative;
+    font-size: 30px;
+    top: 50px;
+}
+
+.SUPBox {
+    grid-column-start: 7;
+    grid-column-end: 15;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    position: relative;
+    line-height: 50px;
+    font-size: 25px;
+    top: 50px;
+}
+
+.SUIMGBox {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    top: 50px;
+}
+
+.SUIMGBox img {
+    max-width: 1000%;
+    height: auto;
+}
+
+
+.GuideButtonGrid {
+    grid-column-start: 10;
+    grid-column-end: 16;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    top: 100px;
+    position: relative;
+}
+
+/* About -> Simulated Universe -> "Visit Guide" Button */
+.GuideButton {
+    font-size: medium;
+    background-color: #7e1b1b;
+    border: #491010;
+    padding: 3%;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.GuideButton:hover {
+    background-color: #c02828;
+    transform: scale(1.2);
+    border: #491010;
+    border-width: 50px;
+}
+
+.GuideButton:active {
+    transform: scale(0.75);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

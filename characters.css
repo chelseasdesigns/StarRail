@@ -1,0 +1,131 @@
+body {
+    background-color: #1d357d;
+}
+
+.character-name {
+    color: whitesmoke;
+}
+
+.hero-text-div {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    background-image: url(img/su-hero-splash.webp);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* backdrop-filter: blur(6px); */
+    backdrop-filter: brightness(70%);
+    /* backdrop-filter: opacity(50%); */
+}
+
+.hero-text-div h1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 50px; */
+    padding-top: 70px;
+    background-color: #0c1a40;
+}
+
+.character-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(9, 10%);
+    grid-auto-rows: 300px;
+    margin: 50px;
+}
+
+.character-img img{
+    width: 70px;
+    height: auto;
+}
+
+/* Grid for Characters */
+.character-name {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    left: 170px;
+}
+
+.character-img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    top: 50px;
+    right: 70px;
+}
+
+.rarity-img {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    top: 130px;
+}
+
+.path-name {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.path-img {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    top: 150px;
+    left: 170px;
+}
+
+img.path-img {
+    width: 230px;
+    height: auto;
+}
+
+
+.element-name {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    left: 90px;
+}
+
+.element-img {
+    grid-column-start: 12;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    top: 150px;
+    left: 170px;
+}
